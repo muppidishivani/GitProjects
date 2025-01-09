@@ -25,6 +25,7 @@ public class reservationController {
 	@PostMapping("/save")
 	public ResponseEntity<ReservationEntity> hotelData( @RequestBody ReservationModel reservationModel)
 	{
+		System.out.println("welcome to java");
 		ReservationEntity reservation=service.saveReservationData(reservationModel);
 		 
         return ResponseEntity
